@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "pmx": "^0.5.5",
+    "@pm2/io": "^2.4.7",
     "tty.js": "github:p-mcgowan/tty.js"
   },
   "config": {
