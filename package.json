@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "pmx": "^0.5.5",
-    "tty.js": "^0.2.15"
+    "tty.js": "github:p-mcgowan/tty.js"
   },
   "config": {
     "port": "8080",
@@ -16,8 +16,8 @@
     "password": "bar",
     "https": "false",
     "bind": "0.0.0.0",
-    "ssl_key" : "./term-default.key",
-    "ssl_cert" : "./term-default.crt"
+    "ssl_key": "./term-default.key",
+    "ssl_cert": "./term-default.crt"
   },
   "keywords": [
     "webshell",
@@ -33,12 +33,15 @@
   "apps": [
     {
       "script": "app.js",
-      "name" : "pm2-webshell",
+      "name": "pm2-webshell",
       "max_memory_restart": "100M",
       "merge_logs": true,
-      "interpreter" : "node@4.8.4"
+      "interpreter": "node@4.8.4"
     }
   ],
-  "author": ["keymetrics", "JNK"],
+  "author": [
+    "keymetrics",
+    "JNK"
+  ],
   "license": "ISC"
 }
